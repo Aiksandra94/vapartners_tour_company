@@ -1,6 +1,7 @@
 package com.web365.Vapartners.OutgoingTours.Test;
 
 import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
 import com.web365.base.VapartnersTourBaseTest;

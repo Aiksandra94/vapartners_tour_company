@@ -16,10 +16,11 @@ public class VapartnersTourBaseTest  {
    @BeforeClass
    public void openVapartnersTours() {
 	   //if chromedriver.exe is not located in C:\Windows directory than
-	   //System.setProperty("webdriver.chrome.driver"),  "C:\Users\Aliksandra\Downloads\Chromedriver_32\MyLocationForChromedriverExe\chromedriver.exe"
-	driver = new ChromeDriver();  
+	System.setProperty("webdrive.chrome.driver", "C:\\Users\\Aliksandra\\Downloads\\chromedriver_win32\\chromedriver.exe");	driver = new ChromeDriver();  
+	driver.manage().window().maximize();
 	driver.get("http://www.vapartners.am");
-	
+	System.out.println("this is before class  " + this.getClass().getSimpleName() );
+
    }
    
    @AfterClass

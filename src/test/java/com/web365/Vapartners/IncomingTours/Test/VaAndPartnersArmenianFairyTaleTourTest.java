@@ -17,39 +17,39 @@ public class VaAndPartnersArmenianFairyTaleTourTest  extends VapartnersTourBaseT
 	Assert.assertTrue(home.incomingTours.isDisplayed());
 	
 	
-	VaAndPartnersIncomingTourArmenianFairyTale IncomingTourArmenianFairyTale = home.goToIncomingTourArmenianFairyTale();
+	VaAndPartnersIncomingTourArmenianFairyTale incomingTourArmenianFairyTale = home.goToIncomingTourArmenianFairyTale();
 	Thread.sleep(3000);
-	Assert.assertTrue(IncomingTourArmenianFairyTale.incomingTours.isDisplayed());	
+	Assert.assertTrue(incomingTourArmenianFairyTale.incomingTours.isDisplayed());	
 	Thread.sleep(3000);
-	Assert.assertTrue(IncomingTourArmenianFairyTale.more.isDisplayed());
+	Assert.assertTrue(incomingTourArmenianFairyTale.more.isDisplayed());
 	Thread.sleep(3000);
-	IncomingTourArmenianFairyTale.more.click();
+	incomingTourArmenianFairyTale.more.click();
 	Thread.sleep(3000);
-	Assert.assertTrue(IncomingTourArmenianFairyTale.name.isDisplayed());
+	Assert.assertTrue(incomingTourArmenianFairyTale.name.isDisplayed());
 	Thread.sleep(3000);
-	IncomingTourArmenianFairyTale.name.click();
-	IncomingTourArmenianFairyTale.name.sendKeys("Aliksandra Galstyan");
+	incomingTourArmenianFairyTale.name.click();
+	incomingTourArmenianFairyTale.name.sendKeys("Aliksandra Galstyan");
 	Thread.sleep(2000);
-	Assert.assertTrue(IncomingTourArmenianFairyTale.phone.isDisplayed());
+	Assert.assertTrue(incomingTourArmenianFairyTale.phone.isDisplayed());
 	Thread.sleep(2000);
-	IncomingTourArmenianFairyTale.phone.click();
-	IncomingTourArmenianFairyTale.phone.sendKeys("4404633690");
+	incomingTourArmenianFairyTale.phone.click();
+	incomingTourArmenianFairyTale.phone.sendKeys("4404633690");
 	Thread.sleep(2000);
-	Assert.assertTrue(IncomingTourArmenianFairyTale.email.isDisplayed());
+	Assert.assertTrue(incomingTourArmenianFairyTale.email.isDisplayed());
 	Thread.sleep(2000);
-	IncomingTourArmenianFairyTale.email.click();
-	IncomingTourArmenianFairyTale.email.sendKeys("Aliksandra.galstyan1@gmail.com");
+	incomingTourArmenianFairyTale.email.click();
+	incomingTourArmenianFairyTale.email.sendKeys("Aliksandra.galstyan1@gmail.com");
 	Thread.sleep(2000);
-	Assert.assertTrue(IncomingTourArmenianFairyTale.message.isDisplayed());
+	Assert.assertTrue(incomingTourArmenianFairyTale.message.isDisplayed());
 	Thread.sleep(2000);
-	IncomingTourArmenianFairyTale.message.click();
-	IncomingTourArmenianFairyTale.message.sendKeys("Hello");
+	incomingTourArmenianFairyTale.message.click();
+	incomingTourArmenianFairyTale.message.sendKeys("Hello");
 	Thread.sleep(2000);
-	Assert.assertTrue(IncomingTourArmenianFairyTale.toOrder.isDisplayed());
+	Assert.assertTrue(incomingTourArmenianFairyTale.toOrder.isDisplayed());
 	Thread.sleep(2000);
-	IncomingTourArmenianFairyTale.toOrder.click();
+	incomingTourArmenianFairyTale.toOrder.click();
 	Thread.sleep(2000);
-
+	// Assert.assertTrue(incomingCulturalTour.orderConfermatin.isDisplayed);
 }
 
 }
