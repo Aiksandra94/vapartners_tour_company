@@ -20,7 +20,7 @@ public class VaAndPartnersGeneralInformation extends VaAndPartnersBasePage {
 	public WebElement armenia;
 	
 	public VaAndPartnersGeneralInformation moveToArmenia() {
-		moveToElement("armenia");
+		moveToElement(armenia);
 		return new VaAndPartnersGeneralInformation(this.driver);
 
 }
