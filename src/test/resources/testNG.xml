@@ -4,26 +4,9 @@
 	<test thread-count="1" verbose="2" name="Default test">
 		<classes>
 
+
+            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingToursTest" />
        <!-- <class name="com.web365.Vapartners.Home.TESTS.VaAndPartnersHomeTest" />
-			<class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersUaeTourTest" />
-			<class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersIsraelTourTest" />
-			<class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersThailandTourTest" />
-			<class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersJordanTourTest" /> 
-			<class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersSrilankaTourTest" />
-			<class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersGeorgiaTourTest" /> 
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourBulgariaTest" />
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourItalyTest" />
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourGrecceTest" />
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourCyprusTest" />
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourFranceTest" />
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourNorwayTest" />            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourCzechRepublicTest" />
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourSpainTest" />
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourEgyptTest" />
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourSingaporeTest" />
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourMaldivesTest" />
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourBaliTest" />
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourRussiaTest" />
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingTourUkraineTest" />
 		    <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersArmeniaGeorgiaTourTest" /> 
 			<class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersArmenianFairyTaleTourTest" /> 
             <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingCulturalTourTest" /> 
@@ -41,9 +24,9 @@
             <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersEarlyModernEraTest" />
             <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersWorldWar1AndTheArmenianGenocideTest" /> 
             <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersDemocraticRepublicOfArmeniaTest" />
-            <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersSovietArmeniaTest" />-->
+            <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersSovietArmeniaTest" />
             <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersCultureOfArmeniaTest" />
-	       <!-- <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersHistoryAndCultureAntiquityTest" />  
+	        <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersHistoryAndCultureAntiquityTest" />  
 			<class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersHistoryAndCultureMiddleAgesTest" /> 
 		    <class name="com.web365.VapartnersFacebookTest.VaAndPartnersFacebookPageTest" />
 			<class name="com.web365.Vapartners.Instagram.Test.VaAndPartnersInstagramTest" /> -->

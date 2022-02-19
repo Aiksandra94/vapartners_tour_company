@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.web365.base.VapartnersTourBaseTest;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourBali;
+import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTours;
 import com.web365.vapartners.page.home.VaAndPartnersHomePage;
 
 public class VaAndPartnersOutgoingTourBaliTest extends VapartnersTourBaseTest {
@@ -16,7 +16,7 @@ public class VaAndPartnersOutgoingTourBaliTest extends VapartnersTourBaseTest {
 	    home = home.logoClick();
 		Assert.assertTrue(home.outgoingTours.isDisplayed());
 		
-		VaAndPartnersOutgoingTourBali outgoingTourBali = home.goToOutgoingTourBali();
+		VaAndPartnersOutgoingTours outgoingTourBali = home.goToOutgoingTourBali();
 		Thread.sleep(3000);
 		Assert.assertTrue(outgoingTourBali.outgoingToures.isDisplayed());
 		Thread.sleep(3000);

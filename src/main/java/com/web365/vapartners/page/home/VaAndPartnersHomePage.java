@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -34,29 +35,11 @@ import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingRecognazeArmeni
 import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingTourArmeniaGeorgia;
 import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingTourArmenianFairyTale;
 import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingUniqueArmeniaWithSafariTour;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourBali;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourBulgaria;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourCyprus;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourCzechRepublic;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourEgypt;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourFrance;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourGeorgia;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourGrecce;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourIsrael;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourItaly;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourJordan;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourMaldives;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourNorway;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourRussia;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourSingapore;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourSpain;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourSrilanka;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourThailand;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourUae;
-import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTourUkraine;
+import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTours;
 import com.web365.vapartners.page.base.VaAndPartnersBasePage;
 
 import static com.web365.vapartners.page.home.VaAndPartnersHomePageConstants.*;
+
 
 
 
@@ -213,110 +196,6 @@ public VaAndPartnersHomePage(WebDriver driver) {
 	
 	
 	
-	
-	public VaAndPartnersOutgoingTourIsrael goToOutgoingTourIsrael() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourIsrael(this.driver);
-	}
-	
-	public VaAndPartnersOutgoingTourUae goToOutgoingTourUae() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourUae(this.driver);
-	}
-	
-	
-	public VaAndPartnersOutgoingTourJordan goToOtgoingTourJordan() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourJordan(this.driver);
-	}
-	
-	public VaAndPartnersOutgoingTourThailand goToOtgoingTourThailand() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourThailand(this.driver);
-	}
-	
-	public VaAndPartnersOutgoingTourSrilanka goToOutgoingTourSrilanka() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourSrilanka(this.driver);
-	}
-	
-	
-	public VaAndPartnersOutgoingTourGeorgia goToOutgoingTourGeorgia() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourGeorgia(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourBulgaria goToOutgoingTourBulgaria() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourBulgaria(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourItaly goToOutgoingTourItaly() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourItaly(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourGrecce goToOutgoingTourGrecce() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourGrecce(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourCyprus goToOutgoingTourCyprus() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourCyprus(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourFrance goToOutgoingTourFrance() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourFrance(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourNorway goToOutgoingTourNorway() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourNorway(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourCzechRepublic goToOutgoingTourCzechRepublic() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourCzechRepublic(this.driver);
-
-	
-	}
-
-	public VaAndPartnersOutgoingTourSpain goToOutgoingTourSpain() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourSpain(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourEgypt goToOutgoingTourEgypt() {
-		outgoingTours.click();
-		return  new VaAndPartnersOutgoingTourEgypt(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourSingapore goToOutgoingTourSingapore() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourSingapore(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourMaldives goToOutgoingTourMaldives() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourMaldives(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourBali goToOutgoingTourBali() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourBali(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourRussia goToOutgoingTourRussia() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourRussia(this.driver);
-	}
-
-	public VaAndPartnersOutgoingTourUkraine goToOutgoingTourUkrain() {
-		outgoingTours.click();
-		return new VaAndPartnersOutgoingTourUkraine(this.driver);
-	}
 
 	public VaAndPartnersHistoryAndCultureMiddleAges goToHistoryAndCulture() {
 		armeniaBtn.click();
@@ -352,6 +231,87 @@ public VaAndPartnersHomePage(WebDriver driver) {
 		armeniaBtn.click();
 		return new VaAndPartnersCultureOfArmenia(this.driver);
 	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourGeorgia() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourIsrael() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourUae() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOtgoingTourJordan() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOtgoingTourThailand() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOtgoingTourSrilanka() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourBulgaria() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourItaly() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourGrecce() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourCyprus() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourFrance() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourNorway() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourCzechRepublic() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver) ;
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourSpain() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourEgypt() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+	
+	
+
+	
+
+
 
 
 
