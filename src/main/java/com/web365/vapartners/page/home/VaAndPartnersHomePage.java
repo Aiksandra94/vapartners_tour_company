@@ -2,39 +2,14 @@ package com.web365.vapartners.page.home;
 
 import org.openqa.selenium.WebDriver;
 
-
-
-
-
-
-
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.web.vapartners.page.menu.VaAndPartnersAboutUsPage;
 import com.web.vapartners.page.menu.VaAndPartnersGalleryPage;
-import com.web365.vapartners.Armenia.History.And.Culture.VaAndPartnersCultureOfArmenia;
-import com.web365.vapartners.Armenia.History.And.Culture.VaAndPartnersDemocraticRepublicOfArmenia;
-import com.web365.vapartners.Armenia.History.And.Culture.VaAndPartnersEarlyModernEra;
-import com.web365.vapartners.Armenia.History.And.Culture.VaAndPartnersHistoryAndCultureAntiquity;
-import com.web365.vapartners.Armenia.History.And.Culture.VaAndPartnersHistoryAndCultureMiddleAges;
-import com.web365.vapartners.Armenia.History.And.Culture.VaAndPartnersSovietArmenia;
-import com.web365.vapartners.Armenia.History.And.Culture.VaAndPartnersWorldWar1AndTheArmenianGenocide;
+import com.web365.vapartners.Armenia.History.And.Culture.VaAndPartnersHistoryAndCulture;
 import com.web365.vapartners.Facebook.Page.VaAndPartnersFacebookPage;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingAntiquarianTour;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingArmeniaGharabaghTour;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingArmeniaShortTour;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingColorsOfArmeniaTour;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingCulturalTour;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingDiscoverArmeniaTour;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingFamTripToArmenia;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingHoneymoonInArmeniaTour;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingPetroglyphTourInArmenia;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingRecognazeArmeniaTour;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingTourArmeniaGeorgia;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingTourArmenianFairyTale;
-import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingUniqueArmeniaWithSafariTour;
+import com.web365.vapartners.incoming.tours.VaAndPartnersIncomingTours;
 import com.web365.vapartners.outgoing.tours.VaAndPartnersOutgoingTours;
 import com.web365.vapartners.page.base.VaAndPartnersBasePage;
 
@@ -97,14 +72,14 @@ public VaAndPartnersHomePage(WebDriver driver) {
 		return new VaAndPartnersFacebookPage(this.driver);
 	}
 
-	public VaAndPartnersHistoryAndCultureAntiquity moveToArmenia() {
+	public VaAndPartnersIncomingTours moveToArmenia() {
 		armeniaBtn.click();
-		return new VaAndPartnersHistoryAndCultureAntiquity(this.driver);
+		return new VaAndPartnersIncomingTours(this.driver);
 	}
 	
-	public VaAndPartnersHistoryAndCultureAntiquity moveToArmenia1() {
+	public VaAndPartnersIncomingTours moveToArmenia1() {
 		armeniaBtn.click();
-		return new VaAndPartnersHistoryAndCultureAntiquity(this.driver);
+		return new VaAndPartnersIncomingTours(this.driver);
 	}
 	
 	public VaAndPartnersHomePage logoClick() {
@@ -127,109 +102,36 @@ public VaAndPartnersHomePage(WebDriver driver) {
 	
 	
 	
-	public VaAndPartnersIncomingTourArmeniaGeorgia goToIncomingTourArmeniaGeorgia() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingTourArmeniaGeorgia(this.driver);
-	}
-	
-	public VaAndPartnersIncomingTourArmenianFairyTale goToIncomingTourArmenianFairyTale() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingTourArmenianFairyTale(this.driver);
-	}
-	
-	public VaAndPartnersIncomingCulturalTour goToIncomingCulturalTour() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingCulturalTour(this.driver);
-	}
-
-	public VaAndPartnersIncomingArmeniaShortTour goToIncomingArmeniaShortTour() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingArmeniaShortTour(this.driver);
-	}
-
-	public VaAndPartnersIncomingDiscoverArmeniaTour goToincomingDiscoverArmeniaTour() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingDiscoverArmeniaTour(this.driver);
-	}
-
-	public VaAndPartnersIncomingArmeniaGharabaghTour goToIncomingArmeniaGharabaghTour() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingArmeniaGharabaghTour(this.driver);
-	}
-
-	public VaAndPartnersIncomingRecognazeArmeniaTour goToIncomingRecognazeArmeniaTour() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingRecognazeArmeniaTour(this.driver);
-	}
-
-	public VaAndPartnersIncomingUniqueArmeniaWithSafariTour goToIncomingUniqueArmeniaWithSafariTours() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingUniqueArmeniaWithSafariTour(this.driver);
-	}
-
-	public VaAndPartnersIncomingAntiquarianTour goToIncomingAntiquarianTour() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingAntiquarianTour(this.driver);
-	}
-
-	public VaAndPartnersIncomingFamTripToArmenia goToIncomingFamTripToArmenia() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingFamTripToArmenia(this.driver);
-	}
-
-	public VaAndPartnersIncomingColorsOfArmeniaTour goToIncomingColorsOfArmeniaTour() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingColorsOfArmeniaTour(this.driver);
-	}
-
-	public VaAndPartnersIncomingHoneymoonInArmeniaTour goToIncomingHoneymoonInArmenia() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingHoneymoonInArmeniaTour(this.driver);
-	}
-
-	public VaAndPartnersIncomingPetroglyphTourInArmenia goToIncomingPetroglyphTourInArmenia() {
-		incomingTours.click();
-		return new VaAndPartnersIncomingPetroglyphTourInArmenia(this.driver);
+	public VaAndPartnersIncomingTours goToHistoryAndCulture() {
+		armeniaBtn.click();
+		return new VaAndPartnersIncomingTours(this.driver);
 	}
 
 	
-	
-	
-	
 
-	public VaAndPartnersHistoryAndCultureMiddleAges goToHistoryAndCulture() {
+	public VaAndPartnersIncomingTours goToEarlyModernEra() {
 		armeniaBtn.click();
-		return new VaAndPartnersHistoryAndCultureMiddleAges(this.driver);
+		return new VaAndPartnersIncomingTours(this.driver);
 	}
 
-	public VaAndPartnersHistoryAndCultureAntiquity goToHistoryAndCulture1() {
+	public VaAndPartnersIncomingTours goToWordWar1AndTheArmenianGenocide() {
 		armeniaBtn.click();
-		return new VaAndPartnersHistoryAndCultureAntiquity(this.driver);
+		return new VaAndPartnersIncomingTours(this.driver);
 	}
 
-	public VaAndPartnersEarlyModernEra goToEarlyModernEra() {
+	public VaAndPartnersIncomingTours goToDemocraticRepublicOfArmenia() {
 		armeniaBtn.click();
-		return new VaAndPartnersEarlyModernEra(this.driver);
+		return new VaAndPartnersIncomingTours(this.driver);
 	}
 
-	public VaAndPartnersWorldWar1AndTheArmenianGenocide goToWordWar1AndTheArmenianGenocide() {
+	public VaAndPartnersIncomingTours goToSovietArmenia() {
 		armeniaBtn.click();
-		return new VaAndPartnersWorldWar1AndTheArmenianGenocide(this.driver);
+		return new VaAndPartnersIncomingTours(this.driver);
 	}
 
-	public VaAndPartnersDemocraticRepublicOfArmenia goToDemocraticRepublicOfArmenia() {
+	public VaAndPartnersIncomingTours goToCultureArmenia() {
 		armeniaBtn.click();
-		return new VaAndPartnersDemocraticRepublicOfArmenia(this.driver);
-	}
-
-	public VaAndPartnersSovietArmenia goToSovietArmenia() {
-		armeniaBtn.click();
-		return new VaAndPartnersSovietArmenia(this.driver);
-	}
-
-	public VaAndPartnersCultureOfArmenia goToCultureArmenia() {
-		armeniaBtn.click();
-		return new VaAndPartnersCultureOfArmenia(this.driver);
+		return new VaAndPartnersIncomingTours(this.driver);
 	}
 
 	public VaAndPartnersOutgoingTours goToOutgoingTourGeorgia() {
@@ -306,6 +208,143 @@ public VaAndPartnersHomePage(WebDriver driver) {
 		outgoingTours.click();
 		return new VaAndPartnersOutgoingTours(this.driver);
 	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourSingapore() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourMaldives() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourBali() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourRussia() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	public VaAndPartnersOutgoingTours goToOutgoingTourUkrain() {
+		outgoingTours.click();
+		return new VaAndPartnersOutgoingTours(this.driver);
+	}
+
+	
+	
+	
+	
+	public VaAndPartnersIncomingTours goToIncomingTourArmeniaGeorgia() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToIncomingTourArmenianFairyTale() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToIncomingCulturalTour() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToIncomingArmeniaShortTour() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToincomingDiscoverArmeniaTour() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToIncomingArmeniaGharabaghTour() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToIncomingRecognazeArmeniaTour() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToIncomingCultural5Tour() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToIncomingUniqueArmeniaWithSafariTours() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToIncomingAntiquarianTour() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToIncomingFamTripToArmenia() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToIncomingColorsOfArmeniaTour() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToIncomingHoneymoonInArmenia() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+
+	public VaAndPartnersIncomingTours goToIncomingPetroglyphTourInArmenia() {
+		incomingTours.click();
+		return new VaAndPartnersIncomingTours(this.driver);
+	}
+	
+	public VaAndPartnersHistoryAndCulture goToHistoryAndCultureAntiquity() {
+		armeniaBtn.click();
+		return new VaAndPartnersHistoryAndCulture(this.driver);
+	}
+
+	public VaAndPartnersHistoryAndCulture goToHistoryAndCultureMiddleAges() {
+		armeniaBtn.click();
+		return new VaAndPartnersHistoryAndCulture(this.driver);
+	}
+	
+	public VaAndPartnersHistoryAndCulture goToHistoryAndCultureEarlyModernEra() {
+		armeniaBtn.click();
+		return new VaAndPartnersHistoryAndCulture(this.driver);
+	}
+
+	public VaAndPartnersHistoryAndCulture goToHistoryAndCultureWordWar1AndTheArmenianGenocide() {
+		armeniaBtn.click();
+		return new VaAndPartnersHistoryAndCulture(this.driver);
+	}
+
+	public VaAndPartnersHistoryAndCulture goToHistoryAndCultureDemocraticRepublicOfArmenia() {
+		armeniaBtn.click();
+		return new VaAndPartnersHistoryAndCulture(this.driver);
+	}
+
+	public VaAndPartnersHistoryAndCulture goToHistoryAndCultureSovietArmenia() {
+		armeniaBtn.click();
+		return new VaAndPartnersHistoryAndCulture(this.driver);
+	}
+
+	public VaAndPartnersHistoryAndCulture goToHistoryAndCultureOfArmenia() {
+		armeniaBtn.click();
+		return new VaAndPartnersHistoryAndCulture(this.driver);
+	}
+	
+	
+	
 	
 	
 

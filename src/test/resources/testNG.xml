@@ -3,32 +3,76 @@
 <suite name="Vapartners Tour Company">
 	<test thread-count="1" verbose="2" name="Default test">
 		<classes>
+			<class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingToursTest">
+				<methods>
+					<exclude name="outgoingTourUae" />
+					<exclude name="outgoingTourJordan" />
+					<exclude name="outgoingTourThailand" />
+					<exclude name="outgoingTourSrilanka" />
+					<exclude name="outgoingTourIsrael" />
+					<exclude name="outgoingTourGeorgia" />
+					<exclude name="outgoingTourBulgaria" />
+					<exclude name="outgoingTourItaly" />
+					<exclude name="outgoingTourGrecce" />
+					<exclude name="outgoingTourCyprus" />
+					<exclude name="outgoingTourFrance" />
+					<exclude name="outgoingTourNorway" />
+					<exclude name="outgoingTourCzechRepublic" />
+					<exclude name="outgoingTourSpain" />
+					<exclude name="outgoingTourEgypt" />
+					<exclude name="outgoingTourSingapore" />
+					<exclude name="outgoingTourMaldives" />
+					<exclude name="outgoingTourBali" />
+					<exclude name="outgoingTourRussia" />
+					<exclude name="outgoingTourUkrain" />
+				</methods>
+			</class>
 
 
-            <class name="com.web365.Vapartners.OutgoingTours.Test.VaAndPartnersOutgoingToursTest" />
-       <!-- <class name="com.web365.Vapartners.Home.TESTS.VaAndPartnersHomeTest" />
-		    <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersArmeniaGeorgiaTourTest" /> 
-			<class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersArmenianFairyTaleTourTest" /> 
-            <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingCulturalTourTest" /> 
-            <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingArmeniaShortTourTest" />
-            <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingDiscoverArmeniaTourTest" />
-            <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingArmeniaGharabaghTourTest" />
-            <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingRecognazeArmeniaTourTest" />
-            <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingUniqueArmeniaWithSafariTourTest" />
-            <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingAntiquarianTourTest" />
-            <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingFamTripToArmeniaTest" />
-            <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingColorsOfArmeniaTourTest" />
-            <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingHoneymoonInArmeniaTourTest" />
-            <class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingPetroglyphTourInArmeniaTest" /> 
-			<class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersArmenianInformationTest" /> 
-            <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersEarlyModernEraTest" />
-            <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersWorldWar1AndTheArmenianGenocideTest" /> 
-            <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersDemocraticRepublicOfArmeniaTest" />
-            <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersSovietArmeniaTest" />
-            <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersCultureOfArmeniaTest" />
-	        <class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersHistoryAndCultureAntiquityTest" />  
-			<class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersHistoryAndCultureMiddleAgesTest" /> 
-		    <class name="com.web365.VapartnersFacebookTest.VaAndPartnersFacebookPageTest" />
+			<class name="com.web365.Vapartners.IncomingTours.Test.VaAndPartnersIncomingToursTest">
+				<methods>
+					<exclude name="incomingArmeniaAndGeorgia" />
+					<exclude name="incomingArmeniaFairyTale" />
+					<exclude name="incomingCulturalTour" />
+					<exclude name="incomingArmShortTour" />
+					<exclude name="incomingDiscoverArmeniaTour" />
+					<exclude name="incomingArmeniaGharabaghTour" />
+					<exclude name="incomingRecognizeArmeniaTour" />
+					<exclude name="incomingCultural5Tours" />
+					<exclude name="incomingUniqueArmeniaTour" />
+					<exclude name="incomingAntiqurarianTour" />
+					<exclude name="incomingFamTripToArmenia" />
+					<exclude name="incomingColorsOfArmeniaTour" />
+					<exclude name="incomingHoneyMoonInArmenia" />
+					<exclude name="incomingPetroglyphInArmeniaTour" />
+				</methods>
+			</class>
+
+
+			<class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersArmenianInformationTest">
+				<methods>
+					<exclude name="generalInformation" />
+				</methods>
+			</class>
+
+
+			<class name="com.web365.Vapartners.ArmenianInformation.Test.VaAndPartnersHistoryAndCultureTest">
+				<methods>
+					<exclude name="historyAndCultureAntiquity" />
+					<exclude name="historyAndCultureMiddleAges" />
+					<exclude name="historyAndCultureEarlyModernEra" />
+					<exclude name="historyAndCultureWorldWar1AndTheArmenianGenocide" />
+					<exclude name="historyAndCultureDemocraticRepublicOfArmenia" />
+					<exclude name="historyAndCultureSovietArmenia" />
+					<exclude name="historyAndCultureOfArmenia" />
+				</methods>
+			</class>
+
+
+			<!--<class name="com.web365.Vapartners.Home.TESTS.VaAndPartnersHomeTest" />
+
+		    <class name="com.web365.VapartnersFacebookTest.VaAndPartnersFacebookPageTest" /> 
+
 			<class name="com.web365.Vapartners.Instagram.Test.VaAndPartnersInstagramTest" /> -->
 		</classes>
 	</test>

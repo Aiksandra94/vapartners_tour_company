@@ -14,15 +14,14 @@ import com.web365.vapartners.page.home.VaAndPartnersHomePage;
 
 public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 
+	
+	
 	@Test
-	public void testVapartnersOutgoingTours() throws InterruptedException {
-	
-	
+	public void outgoingTourUae() throws InterruptedException {
 	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
     home = home.logoClick();
-	Assert.assertTrue(home.outgoingTours.isDisplayed());
-	
-	
+    
+    Assert.assertTrue(home.outgoingTours.isDisplayed());
 	VaAndPartnersOutgoingTours outgoingTourUae = home.goToOutgoingTourUae();
 	Thread.sleep(3000);
 	Assert.assertTrue(outgoingTourUae.outgoingTours.isDisplayed());
@@ -55,12 +54,18 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourUae.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
 	
 	
 	
-	
+	@Test
+	public void outgoingTourJordan() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
+    
+	Assert.assertTrue(home.outgoingTours.isDisplayed());
 	VaAndPartnersOutgoingTours outgoingTourJordan = home.goToOtgoingTourJordan();
 	Thread.sleep(3000);
 	Assert.assertTrue(outgoingTourJordan.outgoingTours.isDisplayed());
@@ -93,10 +98,16 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourJordan.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
 	
 	
+	
+	@Test
+	public void outgoingTourThailand() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
 	VaAndPartnersOutgoingTours outgoingTourThailand = home.goToOtgoingTourThailand();
 	Thread.sleep(3000);
@@ -130,10 +141,16 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourThailand.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
 	
 	
+	
+	@Test
+	public void outgoingTourSrilanka() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
 	VaAndPartnersOutgoingTours outgoingTourSrilanka = home.goToOtgoingTourSrilanka();
 	Thread.sleep(3000);
@@ -167,10 +184,16 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourSrilanka.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
 	
 	
+	
+	@Test
+	public void outgoingTourIsrael() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
 	VaAndPartnersOutgoingTours outgoingTourIsrael = home.goToOutgoingTourIsrael();
 	Thread.sleep(3000);
@@ -204,8 +227,17 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourIsrael.toOrder.click();
 	Thread.sleep(2000);
+	}
+	
 	
 
+	
+	
+	@Test
+	public void outgoingTourGeorgia() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
+	
 	VaAndPartnersOutgoingTours outgoingTourGeorgia = home.goToOutgoingTourGeorgia();
 	Thread.sleep(3000);
 	Assert.assertTrue(outgoingTourGeorgia.outgoingTours.isDisplayed());
@@ -238,8 +270,16 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourGeorgia.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
+	
+	
+	
+	@Test
+	public void outgoingTourBulgaria() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
 	VaAndPartnersOutgoingTours outgoingTourBulgaria = home.goToOutgoingTourBulgaria();
 	Thread.sleep(3000);
@@ -273,10 +313,17 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourBulgaria.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
 	
 	
+	
+	
+	@Test
+	public void outgoingTourItaly() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
 	VaAndPartnersOutgoingTours outgoingTourItaly = home.goToOutgoingTourItaly();	
 	Thread.sleep(3000);
@@ -310,10 +357,16 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourItaly.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
 	
 	
+	
+	@Test
+	public void outgoingTourGrecce() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
 	VaAndPartnersOutgoingTours outgoingTourGrecce = home.goToOutgoingTourGrecce();	
 	Thread.sleep(3000);
@@ -347,9 +400,16 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourGrecce.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
 	
+	
+	
+	@Test
+	public void outgoingTourCyprus() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
 	VaAndPartnersOutgoingTours outgoingTourCyprus = home.goToOutgoingTourCyprus();	
 	Thread.sleep(3000);
@@ -383,10 +443,16 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourCyprus.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
 	
 	
+	
+	@Test
+	public void outgoingTourFrance() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
 	VaAndPartnersOutgoingTours outgoingTourFrance = home.goToOutgoingTourFrance();
 	Thread.sleep(3000);
@@ -420,7 +486,16 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourFrance.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
+	
+	
+	
+	
+	@Test
+	public void outgoingTourNorway() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
 	VaAndPartnersOutgoingTours outgoingTourNorway = home.goToOutgoingTourNorway(); 
 	Thread.sleep(3000);
@@ -454,9 +529,16 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourNorway.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
 	
+	
+	
+	@Test
+	public void outgoingTourCzechRepublic() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
 	VaAndPartnersOutgoingTours outgoingTourCzechRepublic = home.goToOutgoingTourCzechRepublic(); 
 	Thread.sleep(3000);
@@ -490,8 +572,16 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourCzechRepublic.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
+	
+	
+	
+	@Test
+	public void outgoingTourSpain() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
 	VaAndPartnersOutgoingTours outgoingTourSpain = home.goToOutgoingTourSpain(); 
 	Thread.sleep(3000);
@@ -525,8 +615,16 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourSpain.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
+	
+	
+	
+	@Test
+	public void outgoingTourEgypt() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
 	VaAndPartnersOutgoingTours outgoingTourEgypt = home.goToOutgoingTourEgypt();
 	Thread.sleep(3000);
@@ -560,51 +658,222 @@ public class VaAndPartnersOutgoingToursTest  extends VapartnersTourBaseTest {
 	Thread.sleep(2000);
 	outgoingTourEgypt.toOrder.click();
 	Thread.sleep(2000);
+	}
 	
 	
 	
 	
 	
+	@Test
+	public void outgoingTourSingapore() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
+	
+	VaAndPartnersOutgoingTours outgoingTourSingapore = home.goToOutgoingTourSingapore();
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourSingapore.outgoingTours.isDisplayed());
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourSingapore.moreButton16.isDisplayed());
+	Thread.sleep(3000);
+	outgoingTourSingapore.moreButton16.click();
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourSingapore.contForm.isDisplayed());
+	Thread.sleep(3000);
+	outgoingTourSingapore.name.click();
+	outgoingTourSingapore.name.sendKeys("Aliksandra Galstyan");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourSingapore.phone.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourSingapore.phone.click();
+	outgoingTourSingapore.phone.sendKeys("4404633690");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourSingapore.email.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourSingapore.email.click();
+	outgoingTourSingapore.email.sendKeys("Aliksandra.galstyan1@gmail.com");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourSingapore.message.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourSingapore.message.click();
+	outgoingTourSingapore.message.sendKeys("Hello");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourSingapore.toOrder.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourSingapore.toOrder.click();
+	Thread.sleep(2000);
+	}
 	
 	
 	
 	
 	
+	@Test
+	public void outgoingTourMaldives() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
+	
+	VaAndPartnersOutgoingTours outgoingTourMaldives = home.goToOutgoingTourMaldives();
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourMaldives.outgoingTours.isDisplayed());
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourMaldives.moreButton17.isDisplayed());
+	Thread.sleep(3000);
+	outgoingTourMaldives.moreButton17.click();
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourMaldives.contForm.isDisplayed());
+	Thread.sleep(3000);
+	outgoingTourMaldives.name.click();
+	outgoingTourMaldives.name.sendKeys("Aliksandra Galstyan");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourMaldives.phone.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourMaldives.phone.click();
+	outgoingTourMaldives.phone.sendKeys("4404633690");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourMaldives.email.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourMaldives.email.click();
+	outgoingTourMaldives.email.sendKeys("Aliksandra.galstyan1@gmail.com");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourMaldives.message.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourMaldives.message.click();
+	outgoingTourMaldives.message.sendKeys("Hello");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourMaldives.toOrder.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourMaldives.toOrder.click();
+	Thread.sleep(2000);
+	}
 	
 	
 	
 	
 	
+	@Test
+	public void outgoingTourBali() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
+	
+	VaAndPartnersOutgoingTours outgoingTourBali = home.goToOutgoingTourBali();
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourBali.outgoingTours.isDisplayed());
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourBali.moreButton18.isDisplayed());
+	Thread.sleep(3000);
+	outgoingTourBali.moreButton18.click();
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourBali.contForm.isDisplayed());
+	Thread.sleep(3000);
+	outgoingTourBali.name.click();
+	outgoingTourBali.name.sendKeys("Aliksandra Galstyan");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourBali.phone.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourBali.phone.click();
+	outgoingTourBali.phone.sendKeys("4404633690");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourBali.email.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourBali.email.click();
+	outgoingTourBali.email.sendKeys("Aliksandra.galstyan1@gmail.com");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourBali.message.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourBali.message.click();
+	outgoingTourBali.message.sendKeys("Hello");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourBali.toOrder.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourBali.toOrder.click();
+	Thread.sleep(2000);
+	}
 	
 	
 	
 	
 	
+	@Test
+	public void outgoingTourRussia() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
+	
+	VaAndPartnersOutgoingTours outgoingTourRussia = home.goToOutgoingTourRussia();
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourRussia.outgoingTours.isDisplayed());
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourRussia.moreButton19.isDisplayed());
+	Thread.sleep(3000);
+	outgoingTourRussia.moreButton19.click();
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourRussia.contForm.isDisplayed());
+	Thread.sleep(3000);
+	outgoingTourRussia.name.click();
+	outgoingTourRussia.name.sendKeys("Aliksandra Galstyan");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourRussia.phone.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourRussia.phone.click();
+	outgoingTourRussia.phone.sendKeys("4404633690");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourRussia.email.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourRussia.email.click();
+	outgoingTourRussia.email.sendKeys("Aliksandra.galstyan1@gmail.com");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourRussia.message.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourRussia.message.click();
+	outgoingTourRussia.message.sendKeys("Hello");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourRussia.toOrder.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourRussia.toOrder.click();
+	Thread.sleep(2000);
+	}
 	
 	
 	
 	
 	
+	@Test
+	public void outgoingTourUkrain() throws InterruptedException {
+	VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
+    home = home.logoClick();
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
+	VaAndPartnersOutgoingTours outgoingTourUkraine = home.goToOutgoingTourUkrain();
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourUkraine.outgoingTours.isDisplayed());
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourUkraine.moreButton20.isDisplayed());
+	Thread.sleep(3000);
+	outgoingTourUkraine.moreButton20.click();
+	Thread.sleep(3000);
+	Assert.assertTrue(outgoingTourUkraine.contForm.isDisplayed());
+	Thread.sleep(3000);
+	outgoingTourUkraine.name.click();
+	outgoingTourUkraine.name.sendKeys("Aliksandra Galstyan");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourUkraine.phone.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourUkraine.phone.click();
+	outgoingTourUkraine.phone.sendKeys("4404633690");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourUkraine.email.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourUkraine.email.click();
+	outgoingTourUkraine.email.sendKeys("Aliksandra.galstyan1@gmail.com");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourUkraine.message.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourUkraine.message.click();
+	outgoingTourUkraine.message.sendKeys("Hello");
+	Thread.sleep(2000);
+	Assert.assertTrue(outgoingTourUkraine.toOrder.isDisplayed());
+	Thread.sleep(2000);
+	outgoingTourUkraine.toOrder.click();
+	Thread.sleep(2000);
+	}
 	
 	
 

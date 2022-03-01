@@ -10,7 +10,7 @@ import com.web365.vapartners.page.home.VaAndPartnersHomePage;
 public class VaAndPartnersArmenianInformationTest extends VapartnersTourBaseTest {
 	
 	@Test
-	public void testVapartnersTour() throws InterruptedException {
+	public void generalInformation() throws InterruptedException {
 		
 		VaAndPartnersHomePage home = new VaAndPartnersHomePage(driver);
 	    home = home.logoClick();
